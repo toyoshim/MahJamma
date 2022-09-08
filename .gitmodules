@@ -1,0 +1,6 @@
+[submodule "firmware/chlib"]
+	path = firmware/chlib
+	url = git@github.com:toyoshim/chlib.git
+[submodule "firmware/CH55x_python_flasher"]
+	path = firmware/CH55x_python_flasher
+	url = git@github.com:toyoshim/CH55x_python_flasher.git
