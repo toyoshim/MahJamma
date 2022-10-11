@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 2.3,
+          "height": 3.3,
+          "width": 3.3
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -56,7 +56,14 @@
         }
       ],
       "drc_exclusions": [
-        "clearance|108895000|67310000|5dcd01ed-2696-465d-a675-a5a57ceda84a|2d1d79f3-dcab-434a-ba28-bb8af9dc7cfb"
+        "clearance|108120000|67310000|d1d40275-79ec-4d3f-af7e-449273286d9f|a044108a-ff89-4b05-aa91-d4d1242b185d",
+        "clearance|148925000|63400000|b88da3b5-cbee-4225-b8f4-efd4a1ee6702|5fca81c4-1f00-4f36-950c-892b36e224d5",
+        "clearance|148925000|63400000|d6020135-fb16-4396-80b2-6d9fd677c550|5fca81c4-1f00-4f36-950c-892b36e224d5",
+        "clearance|148925000|64074500|4dbca1c6-bd58-424d-a914-ef9062f0f1b7|5fca81c4-1f00-4f36-950c-892b36e224d5",
+        "silk_over_copper|180102500|71120000|bb4286e0-c0c5-4ab8-9a0e-174da74fc483|b246fc1e-28da-4bbb-84a1-e3730593e07b",
+        "silk_overlap|142865714|69873809|95003c2d-9a5c-4db6-afce-d138af16bee1|b0014960-ac2f-4470-a968-c83157e095c3",
+        "silk_overlap|181610000|72325000|bb4286e0-c0c5-4ab8-9a0e-174da74fc483|e144a0e0-9557-4e99-90f9-37a76010d74e",
+        "track_dangling|149452000|62230000|e01913a5-384e-43d7-9f64-847860485eee|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -120,7 +127,10 @@
         "use_height_for_length_calcs": true
       },
       "track_widths": [
-        0.0
+        0.0,
+        0.25,
+        0.4,
+        1.0
       ],
       "via_dimensions": [
         {
@@ -131,7 +141,99 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [
+      {
+        "activeLayer": -2,
+        "layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          44,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ],
+        "name": "Gerber",
+        "renderLayers": [
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          157,
+          158,
+          159,
+          160,
+          161
+        ]
+      }
+    ]
   },
   "boards": [],
   "cvpcb": {
@@ -405,15 +507,15 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [
+          "+3.3V",
           "/-5V",
           "/12V",
-          "/3.3V",
           "GND",
           "VCC"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.5,
+        "track_width": 0.25,
         "via_diameter": 0.5,
         "via_drill": 0.4,
         "wire_width": 6.0

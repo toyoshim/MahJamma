@@ -11,12 +11,12 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 571)
+    (start_pass_no 9222)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 4.0)
+      (against_preferred_direction_trace_costs 3.9)
     )
     (layer_rule B.Cu
       (active on)
@@ -49,11 +49,23 @@
     )
     (attach off)
   )
+  (padstack "Via[0-1]_400:400_um"
+    (shape
+      (circle F.Cu 400.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 400.0 0.0 0.0)
+    )
+    (attach off)
+  )
   (via 
     "Via[0-1]_400:200_um" "Via[0-1]_400:200_um" default
   )
   (via 
     "Via[0-1]_500:400_um" "Via[0-1]_500:400_um" default
+  )
+  (via 
+    "Via[0-1]_400:400_um" "Via[0-1]_400:400_um" default
   )
   (via 
     "Via[0-1]_400:200_um-kicad_default" "Via[0-1]_400:200_um" "kicad_default"
@@ -62,16 +74,25 @@
     "Via[0-1]_500:400_um-kicad_default" "Via[0-1]_500:400_um" "kicad_default"
   )
   (via 
+    "Via[0-1]_400:400_um-kicad_default" "Via[0-1]_400:400_um" "kicad_default"
+  )
+  (via 
     "Via[0-1]_400:200_um-Analog" "Via[0-1]_400:200_um" Analog
   )
   (via 
     "Via[0-1]_500:400_um-Analog" "Via[0-1]_500:400_um" Analog
   )
   (via 
+    "Via[0-1]_400:400_um-Analog" "Via[0-1]_400:400_um" Analog
+  )
+  (via 
     "Via[0-1]_400:200_um-Power" "Via[0-1]_400:200_um" Power
   )
   (via 
     "Via[0-1]_500:400_um-Power" "Via[0-1]_500:400_um" Power
+  )
+  (via 
+    "Via[0-1]_400:400_um-Power" "Via[0-1]_400:400_um" Power
   )
   (via_rule
     default "Via[0-1]_400:200_um"
@@ -87,17 +108,20 @@
   )
   (class default
     /1PC /SVC /TEST /TXD /BOOT "/H1_DP" "/H1_DM" /M5
-    "unconnected-(U1-Pad3)" "unconnected-(U1-Pad22)" "unconnected-(U1-Pad23)" "unconnected-(U1-Pad24)" "unconnected-(U1-Pad25)" "unconnected-(U1-Pad26)" "unconnected-(U1-Pad27)" "unconnected-(U1-Pad28)"
-    "unconnected-(U1-Pad38)" "unconnected-(U1-Pad39)" "unconnected-(U1-Pad40)" "unconnected-(J1-Pada7)" "unconnected-(J1-Pada8)" "unconnected-(J1-Pada9)" "unconnected-(J1-Pada11)" "unconnected-(J1-Padb7)"
-    "unconnected-(J1-Padb8)" "unconnected-(J1-Padb9)" "unconnected-(J1-Padb11)" "unconnected-(J1-Padb15)" "unconnected-(J5-Pada3)" "unconnected-(J5-Pada4)" "unconnected-(J5-Pada6)" "unconnected-(J5-Pada11)"
-    "unconnected-(J5-Pada12)" "unconnected-(J5-Pada13)" "unconnected-(J5-Pada14)" "unconnected-(J5-Pada15)" "unconnected-(J5-Pada16)" "unconnected-(J5-Pada18)" "unconnected-(J5-Pada24)" "unconnected-(J5-Padb4)"
-    "unconnected-(J5-Padb7)" "unconnected-(J5-Padb17)" "unconnected-(J5-Padb18)" "unconnected-(J5-Padb24)" "unconnected-(J1-Padb27)" "unconnected-(J1-Padb26)" "unconnected-(J1-Padb25)" "unconnected-(J1-Padb24)"
-    "unconnected-(J1-Padb23)" "unconnected-(J1-Padb22)" "unconnected-(J1-Padb21)" "unconnected-(J1-Padb20)" "unconnected-(J1-Padb19)" "unconnected-(J1-Padb18)" "unconnected-(J1-Padb17)" "unconnected-(J1-Padb16)"
-    "unconnected-(J1-Pada27)" "unconnected-(J1-Pada26)" "unconnected-(J1-Pada25)" "unconnected-(J1-Pada24)" "unconnected-(J1-Pada23)" "unconnected-(J1-Pada22)" "unconnected-(J1-Pada21)" "unconnected-(J1-Pada20)"
-    "unconnected-(J1-Pada19)" "unconnected-(J1-Pada18)" "unconnected-(J1-Pada17)" /M11 /M1 /M3 /M4 /M7
-    /M8 /M6 /M9 /M2 /M10 "unconnected-(U1-Pad1)" "unconnected-(U1-Pad2)" "unconnected-(U1-Pad4)"
-    "unconnected-(U1-Pad5)" "unconnected-(U1-Pad6)" "unconnected-(U1-Pad14)" "unconnected-(U1-Pad15)" "unconnected-(U1-Pad17)" "unconnected-(U1-Pad19)" "unconnected-(U1-Pad20)" "unconnected-(U1-Pad21)"
-    "unconnected-(U1-Pad29)" "unconnected-(U1-Pad30)" "unconnected-(U1-Pad43)" "unconnected-(U1-Pad44)" "unconnected-(U1-Pad45)" "unconnected-(U1-Pad46)" "unconnected-(U1-Pad47)" "unconnected-(U1-Pad48)"
+    "unconnected-(U1-Pad3)" /LED "Net-(D1-Pad2)" /TCK /TDO /TMS "unconnected-(J6-Pad6)" "unconnected-(J6-Pad7)"
+    "unconnected-(J6-Pad8)" /TDI "unconnected-(J1-Pada7)" "unconnected-(J1-Pada8)" "unconnected-(J1-Pada9)" "unconnected-(J1-Pada11)" "unconnected-(J1-Padb7)" "unconnected-(J1-Padb8)"
+    "unconnected-(J1-Padb9)" "unconnected-(J1-Padb11)" "unconnected-(J1-Padb15)" "unconnected-(J5-Pada3)" "unconnected-(J5-Pada4)" "unconnected-(J5-Pada6)" "unconnected-(J5-Pada11)" "unconnected-(J5-Pada12)"
+    "unconnected-(J5-Pada13)" "unconnected-(J5-Pada14)" "unconnected-(J5-Pada15)" "unconnected-(J5-Pada16)" "unconnected-(J5-Pada18)" "unconnected-(J5-Pada24)" "unconnected-(J5-Padb4)" "unconnected-(J5-Padb7)"
+    "unconnected-(J5-Padb17)" "unconnected-(J5-Padb18)" "unconnected-(J5-Padb24)" "unconnected-(J1-Padb27)" "unconnected-(J1-Padb26)" "unconnected-(J1-Padb25)" "unconnected-(J1-Padb24)" "unconnected-(J1-Padb23)"
+    "unconnected-(J1-Padb22)" "unconnected-(J1-Padb21)" "unconnected-(J1-Padb20)" "unconnected-(J1-Padb19)" "unconnected-(J1-Padb18)" "unconnected-(J1-Padb17)" "unconnected-(J1-Padb16)" "unconnected-(J1-Pada27)"
+    "unconnected-(J1-Pada26)" "unconnected-(J1-Pada25)" "unconnected-(J1-Pada24)" "unconnected-(J1-Pada23)" "unconnected-(J1-Pada22)" "unconnected-(J1-Pada21)" "unconnected-(J1-Pada20)" "unconnected-(J1-Pada19)"
+    "unconnected-(J1-Pada18)" "unconnected-(J1-Pada17)" /M11 /M1 /M3 /M4 /M7 /M8
+    /M6 /M9 /M2 /M10 "unconnected-(U1-Pad1)" "unconnected-(U1-Pad2)" "unconnected-(U1-Pad4)" "unconnected-(U1-Pad5)"
+    "unconnected-(U1-Pad6)" "unconnected-(U1-Pad14)" "unconnected-(U1-Pad15)" "unconnected-(U1-Pad17)" "unconnected-(U1-Pad7)" "unconnected-(U1-Pad8)" "unconnected-(U1-Pad9)" "unconnected-(U1-Pad29)"
+    "unconnected-(U1-Pad30)" "unconnected-(U1-Pad10)" "unconnected-(U1-Pad11)" "unconnected-(U1-Pad12)" "unconnected-(U1-Pad13)" /COIN "/S_RON" "/S_REACH"
+    "/S_KAN" "/S_PON" "/S_CHI" "/S_N" "/S_M" "/S_L" "/S_K" "/S_J"
+    "/S_I" "/S_H" "/S_G" "/S_F" "/S_E" "/S_D" "/S_C" "/S_B"
+    "/S_A" "/S_START"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -129,11 +153,11 @@
     )
   )
   (class Power
-    GND /3.3V VCC /12V "/-5V"
+    VCC GND +3.3V /12V "/-5V"
     (clearance_class Power)
     (via_rule Power)
     (rule
-      (width 1500.0)
+      (width 250.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
