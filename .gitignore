@@ -3,3 +3,8 @@
 fp-info-cache
 gerber.zip
 gerber/*.zip
+logic/db
+logic/incremental_db
+logic/output_files
+logic/simulation
+logic/*.bak
