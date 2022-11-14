@@ -60,9 +60,19 @@
         "clearance|148925000|63400000|b88da3b5-cbee-4225-b8f4-efd4a1ee6702|5fca81c4-1f00-4f36-950c-892b36e224d5",
         "clearance|148925000|63400000|d6020135-fb16-4396-80b2-6d9fd677c550|5fca81c4-1f00-4f36-950c-892b36e224d5",
         "clearance|148925000|64074500|4dbca1c6-bd58-424d-a914-ef9062f0f1b7|5fca81c4-1f00-4f36-950c-892b36e224d5",
+        "courtyards_overlap|103610001|75670001|2e51734b-407d-4834-b46a-9b02f6b78e3e|bcb90037-9924-45cd-abc5-da8e26d9432b",
+        "courtyards_overlap|109349999|75670001|2f7ccdce-4fe5-40fa-930d-ef6a47e4d90c|bcb90037-9924-45cd-abc5-da8e26d9432b",
+        "courtyards_overlap|117253001|61215001|d00a74b4-b9fd-482b-b970-422e5621e616|d23e67f1-4a46-4eb0-bb34-298c02434f2b",
+        "courtyards_overlap|131095001|68200001|09a6e49f-eae7-4653-ad68-5410cdb0ae1d|c9373133-51a0-424d-b1cd-e6353febe815",
+        "courtyards_overlap|139447001|75724001|09a6e49f-eae7-4653-ad68-5410cdb0ae1d|49bce0bc-cf55-4498-96aa-776f321e4b44",
+        "silk_over_copper|116228714|63317380|c9612c58-de94-48ef-b5e0-6b873f52e2b1|df130e16-6dd4-497c-8545-7359fe2c3f26",
         "silk_over_copper|180102500|71120000|bb4286e0-c0c5-4ab8-9a0e-174da74fc483|b246fc1e-28da-4bbb-84a1-e3730593e07b",
+        "silk_overlap|116228714|62603095|c9612c58-de94-48ef-b5e0-6b873f52e2b1|b2b0b83a-7f99-4ff4-9270-872fae1ba53c",
+        "silk_overlap|117697500|78205000|67ce1528-957b-4fa4-844e-88cd090633e9|d32896d7-eaa2-40a5-b924-a01a4d961fb3",
+        "silk_overlap|118514904|63079285|b7ca6f88-5a9d-4bd6-9193-4b9f56971fc5|97c4fe4a-3832-4343-a2f1-b419d542d892",
         "silk_overlap|142865714|69873809|95003c2d-9a5c-4db6-afce-d138af16bee1|b0014960-ac2f-4470-a968-c83157e095c3",
         "silk_overlap|181610000|72325000|bb4286e0-c0c5-4ab8-9a0e-174da74fc483|e144a0e0-9557-4e99-90f9-37a76010d74e",
+        "silk_overlap|181610000|72390000|bb4286e0-c0c5-4ab8-9a0e-174da74fc483|e144a0e0-9557-4e99-90f9-37a76010d74e",
         "track_dangling|149452000|62230000|e01913a5-384e-43d7-9f64-847860485eee|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
@@ -491,7 +501,7 @@
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
+        "track_width": 0.4,
         "via_diameter": 0.4,
         "via_drill": 0.2,
         "wire_width": 6.0
@@ -515,7 +525,7 @@
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.75,
         "via_diameter": 0.5,
         "via_drill": 0.4,
         "wire_width": 6.0
@@ -530,7 +540,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../../Applications/KiCad6/",
       "specctra_dsn": "MahJamma.dsn",
       "step": "",
       "vrml": ""

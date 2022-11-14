@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 9222)
+    (start_pass_no 10227)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -49,23 +49,11 @@
     )
     (attach off)
   )
-  (padstack "Via[0-1]_400:400_um"
-    (shape
-      (circle F.Cu 400.0 0.0 0.0)
-    )
-    (shape
-      (circle B.Cu 400.0 0.0 0.0)
-    )
-    (attach off)
-  )
   (via 
     "Via[0-1]_400:200_um" "Via[0-1]_400:200_um" default
   )
   (via 
     "Via[0-1]_500:400_um" "Via[0-1]_500:400_um" default
-  )
-  (via 
-    "Via[0-1]_400:400_um" "Via[0-1]_400:400_um" default
   )
   (via 
     "Via[0-1]_400:200_um-kicad_default" "Via[0-1]_400:200_um" "kicad_default"
@@ -74,25 +62,16 @@
     "Via[0-1]_500:400_um-kicad_default" "Via[0-1]_500:400_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_400:400_um-kicad_default" "Via[0-1]_400:400_um" "kicad_default"
-  )
-  (via 
     "Via[0-1]_400:200_um-Analog" "Via[0-1]_400:200_um" Analog
   )
   (via 
     "Via[0-1]_500:400_um-Analog" "Via[0-1]_500:400_um" Analog
   )
   (via 
-    "Via[0-1]_400:400_um-Analog" "Via[0-1]_400:400_um" Analog
-  )
-  (via 
     "Via[0-1]_400:200_um-Power" "Via[0-1]_400:200_um" Power
   )
   (via 
     "Via[0-1]_500:400_um-Power" "Via[0-1]_500:400_um" Power
-  )
-  (via 
-    "Via[0-1]_400:400_um-Power" "Via[0-1]_400:400_um" Power
   )
   (via_rule
     default "Via[0-1]_400:200_um"
@@ -116,12 +95,10 @@
     "unconnected-(J1-Padb22)" "unconnected-(J1-Padb21)" "unconnected-(J1-Padb20)" "unconnected-(J1-Padb19)" "unconnected-(J1-Padb18)" "unconnected-(J1-Padb17)" "unconnected-(J1-Padb16)" "unconnected-(J1-Pada27)"
     "unconnected-(J1-Pada26)" "unconnected-(J1-Pada25)" "unconnected-(J1-Pada24)" "unconnected-(J1-Pada23)" "unconnected-(J1-Pada22)" "unconnected-(J1-Pada21)" "unconnected-(J1-Pada20)" "unconnected-(J1-Pada19)"
     "unconnected-(J1-Pada18)" "unconnected-(J1-Pada17)" /M11 /M1 /M3 /M4 /M7 /M8
-    /M6 /M9 /M2 /M10 "unconnected-(U1-Pad1)" "unconnected-(U1-Pad2)" "unconnected-(U1-Pad4)" "unconnected-(U1-Pad5)"
-    "unconnected-(U1-Pad6)" "unconnected-(U1-Pad14)" "unconnected-(U1-Pad15)" "unconnected-(U1-Pad17)" "unconnected-(U1-Pad7)" "unconnected-(U1-Pad8)" "unconnected-(U1-Pad9)" "unconnected-(U1-Pad29)"
-    "unconnected-(U1-Pad30)" "unconnected-(U1-Pad10)" "unconnected-(U1-Pad11)" "unconnected-(U1-Pad12)" "unconnected-(U1-Pad13)" /COIN "/S_RON" "/S_REACH"
-    "/S_KAN" "/S_PON" "/S_CHI" "/S_N" "/S_M" "/S_L" "/S_K" "/S_J"
-    "/S_I" "/S_H" "/S_G" "/S_F" "/S_E" "/S_D" "/S_C" "/S_B"
-    "/S_A" "/S_START"
+    /M6 /M9 /M2 /M10 "unconnected-(U1-Pad1)" "unconnected-(U1-Pad2)" "/KEY_9" "/KEY_8"
+    "/KEY_7" "/KEY_6" "/KEY_5" "/KEY_4" "/KEY_3" "/KEY_2" "/KEY_1" "/KEY_0"
+    "unconnected-(U1-Pad4)" "/KEY_14" "/KEY_13" "/KEY_12" "/KEY_CLK_0" "/MAT_EN_X_1" "/MAT_EN_X_0" "/KEY_CLK_1"
+    "/MAT_P" "/KEY_11" "/KEY_10" "unconnected-(U1-Pad39)" "unconnected-(U1-Pad29)" "unconnected-(U1-Pad30)"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -157,7 +134,7 @@
     (clearance_class Power)
     (via_rule Power)
     (rule
-      (width 250.0)
+      (width 750.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
